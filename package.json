@@ -1,0 +1,122 @@
+{
+  "name": "cursor-position-saver",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/cursor-position-saver.git",
+    "displayName": "Cursor Position Saver",
+    "description": "持久化保存和恢复光标位置，支持关机重启后恢复",
+    "version": "1.0.0",
+    "engines": {
+      "vscode": "^1.85.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "activationEvents": [
+      "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+      "configuration": {
+        "title": "Cursor Position Saver",
+        "properties": {
+          "cursorPositionSaver.enabled": {
+            "type": "boolean",
+            "default": true,
+            "description": "启用/禁用光标位置保存功能"
+          },
+          "cursorPositionSaver.saveInterval": {
+            "type": "number",
+            "default": 10,
+            "enum": [
+              5,
+              10,
+              30,
+              60
+            ],
+            "enumDescriptions": [
+              "5秒",
+              "10秒",
+              "30秒",
+              "1分钟"
+            ],
+            "description": "保存光标位置的时间间隔（秒）"
+          },
+          "cursorPositionSaver.showNotification": {
+            "type": "string",
+            "default": "silent",
+            "enum": [
+              "silent",
+              "5s",
+              "10s",
+              "30s",
+              "60s"
+            ],
+            "enumDescriptions": [
+              "静默提示",
+              "5秒提示一次",
+              "10秒提示一次",
+              "30秒提示一次",
+              "1分钟提示一次"
+            ],
+            "description": "保存提示频率"
+          },
+          "cursorPositionSaver.saveLocation": {
+            "type": "string",
+            "default": "c_drive",
+            "enum": [
+              "c_drive",
+              "d_drive"
+            ],
+            "enumDescriptions": [
+              "C盘用户目录",
+              "D盘目录"
+            ],
+            "description": "保存位置选择"
+          },
+          "cursorPositionSaver.maxFilesPerDocument": {
+            "type": "number",
+            "default": 10,
+            "enum": [
+              1,
+              10,
+              30,
+              100
+            ],
+            "enumDescriptions": [
+              "1个",
+              "10个",
+              "30个",
+              "100个"
+            ],
+            "description": "每个文件保存的最大光标位置数量"
+          }
+        }
+      },
+      "commands": [
+        {
+          "command": "cursorPositionSaver.toggle",
+          "title": "切换光标位置保存功能"
+        },
+        {
+          "command": "cursorPositionSaver.clearAll",
+          "title": "清除所有保存的光标位置"
+        },
+        {
+          "command": "cursorPositionSaver.showStatus",
+          "title": "显示插件状态"
+        }
+      ]
+    },
+    "scripts": {
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./",
+      "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+      "@types/vscode": "^1.85.0",
+      "@types/node": "16.x",
+      "typescript": "^4.9.4"
+    }
+  }
+}
