@@ -1,6 +1,8 @@
-中文：  插件在Releases 预发布版本在tags里面
+目前发现问题：扩展设置无法修改。现在还没修复
+Currently known issue: extension settings cannot be modified. Not yet fixed.
+插件在Releases 预发布版本在tags里面
 The plugin is in Releases, and the pre-release versions are under Tags.
-
+中文：  
 我一直想找一个关闭整个vscode可以自动回到上次光标位置的插件，不知道是我搜索还是英文名或者是根本就没有这个插件。我没找到，所以就用ai写了这个插件 住：使用gpt ai翻译不确保对不对。
 这个插件是我用claude，ai编写出来的代码，作用是防止你为了躲避某人或者不小心点出了vscode导致源文件的光标位置忘记或者不想再从文章最上面重新找到上次光标位置。所以就做了这个插件，在设置里面搜索Cursor Position Saver这个会找到扩展的设置当然是中文的，因为本人一点编程也不会，英语也不会，用ai翻译的。哈哈哈。学习还要很长的时间，如果有大佬来帮我一起完成这个项目最好了。一直开源。因为我本来就是想着方便大家。
 解释1下，扩展设置的详细信息，我也不知道claude搞得行不行：从搜索Cursor Position Saver按上到下排序
