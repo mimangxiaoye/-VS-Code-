@@ -9,7 +9,7 @@
 5.提示保存光标的时间（右下角会提示这个文件光标保存的信息，） 插件在Releases tags 里面 至于文件大小，我也搞不明白为什么这么大，问ai也没问明白，甚至让我冲钱，可惜没钱没法发消息了
 ----------------------------------------就这5个设置剩下的不是-----------------------------------------------
 
-english：GPT-based AI Translation
+English：GPT-based AI Translation
 I’ve always wanted a plugin that could restore the last cursor position after completely closing VS Code. I tried searching for it, but maybe I didn’t use the right English keywords—or maybe such a plugin simply didn’t exist. So I used AI to help me write this one.
 
 This plugin was created using Claude AI. Its purpose is to help you remember your last editing position, especially if you accidentally close VS Code, switch windows to avoid someone, or just don’t want to scroll back from the top every time.
