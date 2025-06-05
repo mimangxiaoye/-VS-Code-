@@ -6,8 +6,9 @@
 2.保存在本地计算机的文件数量（按照最新保存时间）
 3.保存光标的时间（顾名思义，就是保存的时间。我也不知道gpt能不能翻译中文成语）
 4.保存的位置 1.c盘用户文件你的用户名mycode 比如：C:\Users\你的用户名\mycode\cursor-positions.json 2.d盘 mycode
-5.提示保存光标的时间（右下角会提示这个文件光标保存的信息，）
+5.提示保存光标的时间（右下角会提示这个文件光标保存的信息，） 插件在Releases tags 里面 至于文件大小，我也搞不明白为什么这么大，问ai也没问明白，甚至让我冲钱，可惜没钱没法发消息了
 ----------------------------------------就这5个设置剩下的不是-----------------------------------------------
+
 english：GPT-based AI Translation
 I’ve always wanted a plugin that could restore the last cursor position after completely closing VS Code. I tried searching for it, but maybe I didn’t use the right English keywords—or maybe such a plugin simply didn’t exist. So I used AI to help me write this one.
 
@@ -28,6 +29,6 @@ C:\Users\<your-username>\mycode\cursor-positions.json
 
 or D:\mycode
 
-Show cursor save time in notification (a message will pop up in the lower right corner showing that the cursor was saved)
+Show cursor save time in notification (a message will pop up in the lower right corner showing that the cursor was saved) The extension can be found in the Releases section (tags). “As for the file size, I don’t really understand why it’s so big. I asked AI but didn’t get a clear answer. It even suggested I pay, but unfortunately, I don’t have money and can’t send messages.”
 
 ------------That’s all! The rest of the settings aren’t really used for now.---------------
