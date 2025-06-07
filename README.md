@@ -1,3 +1,4 @@
+此项目已经弃用，请转到https://github.com/mimangxiaoye/vscode-Cursor-Position-S
 目前发现问题：扩展设置无法修改。现在还没修复
 Currently known issue: extension settings cannot be modified. Not yet fixed.
 插件在Releases 预发布版本在tags里面
